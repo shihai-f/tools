@@ -1,0 +1,10 @@
+name = "tools"
+main = "worker.js"
+compatibility_date = "2025-09-24"
+
+[build]
+# 先安装依赖，再构建
+command = "npm ci && npm run build"
+
+[assets]
+directory = "./dist"
